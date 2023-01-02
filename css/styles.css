@@ -814,6 +814,7 @@ display: flex;
     text-decoration-line: none;
     display: block;
     margin-bottom: 20px;
+    padding: 0;
 }
 
 .contact-list-footer {

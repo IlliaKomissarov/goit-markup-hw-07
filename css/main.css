@@ -63,6 +63,16 @@ img {
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.features-title, .section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
 body {
   color: var(--prmary-text-color);
   font-family: Roboto, Verdana, sans-serif;
@@ -272,6 +282,177 @@ body {
 .icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+.section.com {
+  background-color: var(--bg-our-color);
+}
+
+.item.com {
+  width: 270px;
+  background-color: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.list-workers {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.list-workers .link {
+  display: inline-flex;
+  fill: var(--borders);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+}
+
+.team-item {
+  background: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  margin-right: 30px;
+}
+.team-item:last-child {
+  margin-right: 0px;
+}
+
+.team-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+
+.p-job {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--prmary-text-color);
+  margin-bottom: 16px;
+}
+
+.social-com {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.social-com .link:hover, .social-com .link:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+}
+
+.clients {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  list-style: none;
+}
+.clients .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: var(--borders);
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  fill: currentColor;
+  transition: border-color 250ms var(--timing-function), color 250ms var(--timing-function);
+}
+.clients .link:hover, .clients .link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+.clients .item + .item {
+  margin-left: 30px;
+}
+
+.icon-clients {
+  fill: currentColor;
+}
+
+.features-title {
+  display: none;
+}
+
+.conteiner .features-list {
+  display: flex;
+}
+
+.features-list {
+  list-style: none;
+  gap: 30px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
+.p-list {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--prmary-text-color);
+}
+
+.list .way {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.list .way:last-child {
+  margin-right: 0;
+}
+
+.item .way-card {
+  display: inline-flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bg-our-color);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-card {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.features-list .item {
+  flex-basis: auto;
+  width: 270px;
+}
+
+.features-list .item :last-child {
+  margin: 0;
 }
 
 .backdrop {
@@ -1015,6 +1196,7 @@ body {
           text-decoration-line: none;
   display: block;
   margin-bottom: 20px;
+  padding: 0;
 }
 
 .contact-list-footer {

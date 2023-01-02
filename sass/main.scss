@@ -10,6 +10,13 @@
 
 @import './components/header';
 
+@import './components/team';
+
+@import './components/clients';
+
+@import './components/feature';
+
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -763,6 +770,7 @@
     text-decoration-line: none;
     display: block;
     margin-bottom: 20px;
+    padding: 0;
 }
 
 .contact-list-footer {
